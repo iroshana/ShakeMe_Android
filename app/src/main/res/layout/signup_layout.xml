@@ -1,5 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/img_label_createAccount"
+        android:layout_width="389dp"
+        android:layout_height="86dp"
+        android:layout_x="15dp"
+        android:layout_y="80dp"
+        app:srcCompat="@drawable/lblcreateaccount" />
+
+    <ImageView
+        android:id="@+id/img_FullName"
+        android:layout_width="389dp"
+        android:layout_height="86dp"
+        android:layout_x="15dp"
+        android:layout_y="177dp"
+        app:srcCompat="@drawable/fullname" />
+
+    <ImageView
+        android:id="@+id/img_Username"
+        android:layout_width="389dp"
+        android:layout_height="86dp"
+        android:layout_x="15dp"
+        android:layout_y="268dp"
+        app:srcCompat="@drawable/username" />
+
+    <ImageView
+        android:id="@+id/img_Email"
+        android:layout_width="389dp"
+        android:layout_height="86dp"
+        android:layout_x="15dp"
+        android:layout_y="358dp"
+        app:srcCompat="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/img_Password"
+        android:layout_width="389dp"
+        android:layout_height="86dp"
+        android:layout_x="15dp"
+        android:layout_y="450dp"
+        app:srcCompat="@drawable/password" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="389dp"
+        android:layout_height="86dp"
+        android:layout_x="15dp"
+        android:layout_y="563dp"
+        app:srcCompat="@drawable/btnsignup" />
+
+    <EditText
+        android:id="@+id/txt_FullName"
+        android:layout_width="304dp"
+        android:layout_height="55dp"
+        android:layout_x="91dp"
+        android:layout_y="200dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txt_UserName"
+        android:layout_width="304dp"
+        android:layout_height="55dp"
+        android:layout_x="91dp"
+        android:layout_y="289dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txt_Email"
+        android:layout_width="304dp"
+        android:layout_height="55dp"
+        android:layout_x="91dp"
+        android:layout_y="380dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txt_Password"
+        android:layout_width="304dp"
+        android:layout_height="55dp"
+        android:layout_x="91dp"
+        android:layout_y="472dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+</AbsoluteLayout>
