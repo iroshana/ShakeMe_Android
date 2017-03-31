@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_LoginBtn"
+        android:layout_width="387dp"
+        android:layout_height="72dp"
+        android:layout_x="15dp"
+        android:layout_y="492dp"
+        app:srcCompat="@drawable/btnlogin" />
+
+    <ImageView
+        android:id="@+id/imageUsename"
+        android:layout_width="389dp"
+        android:layout_height="86dp"
+        android:layout_x="15dp"
+        android:layout_y="277dp"
+        app:srcCompat="@drawable/username" />
+
+    <EditText
+        android:id="@+id/txt_Username"
+        android:layout_width="304dp"
+        android:layout_height="55dp"
+        android:layout_x="93dp"
+        android:layout_y="296dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imagePassword"
+        android:layout_width="389dp"
+        android:layout_height="86dp"
+        android:layout_x="15dp"
+        android:layout_y="385dp"
+        android:contentDescription="imageForPasswordField"
+        app:srcCompat="@drawable/password" />
+
+    <EditText
+        android:id="@+id/txt_Password"
+        android:layout_width="304dp"
+        android:layout_height="55dp"
+        android:layout_x="93dp"
+        android:layout_y="405dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+</AbsoluteLayout>
