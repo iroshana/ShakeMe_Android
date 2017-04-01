@@ -28,6 +28,7 @@
         android:layout_y="296dp"
         android:ems="10"
         android:hint="@string/username"
+        android:textColorHint="@android:color/white"
         android:inputType="textPersonName" />
 
     <ImageView
@@ -47,6 +48,7 @@
         android:layout_y="405dp"
         android:ems="10"
         android:hint="@string/password"
+        android:textColorHint="@android:color/white"
         android:inputType="textPassword" />
 
 </AbsoluteLayout>

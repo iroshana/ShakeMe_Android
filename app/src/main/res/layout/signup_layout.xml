@@ -59,6 +59,7 @@
         android:layout_y="200dp"
         android:ems="10"
         android:hint="Full Name"
+        android:textColorHint="@android:color/white"
         android:inputType="textPersonName" />
 
     <EditText
@@ -69,6 +70,7 @@
         android:layout_y="289dp"
         android:ems="10"
         android:hint="Username"
+        android:textColorHint="@android:color/white"
         android:inputType="textPersonName" />
 
     <EditText
@@ -79,6 +81,7 @@
         android:layout_y="380dp"
         android:ems="10"
         android:hint="Email"
+        android:textColorHint="@android:color/white"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -89,6 +92,7 @@
         android:layout_y="472dp"
         android:ems="10"
         android:hint="Password"
+        android:textColorHint="@android:color/white"
         android:inputType="textPassword" />
 
 </AbsoluteLayout>
