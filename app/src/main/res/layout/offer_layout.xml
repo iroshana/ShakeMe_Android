@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtoffercode"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_x="17dp"
+        android:layout_y="61dp"
+        android:text="Offer Code : 0012" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:layout_x="11dp"
+        android:layout_y="8dp"
+        android:text="Back" />
+
+    <ImageView
+        android:id="@+id/imgoffer"
+        android:layout_width="359dp"
+        android:layout_height="447dp"
+        android:layout_x="11dp"
+        android:layout_y="96dp"
+        app:srcCompat="@drawable/offer" />
+</AbsoluteLayout>

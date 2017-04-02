@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_btn_select2"
+        android:layout_width="146dp"
+        android:layout_height="144dp"
+        android:layout_x="225dp"
+        android:layout_y="94dp"
+        app:srcCompat="@drawable/chiken" />
+
+    <ImageView
+        android:id="@+id/img_btn_select4"
+        android:layout_width="146dp"
+        android:layout_height="144dp"
+        android:layout_x="38dp"
+        android:layout_y="461dp"
+        app:srcCompat="@drawable/meal" />
+
+    <ImageView
+        android:id="@+id/img_btn_select5"
+        android:layout_width="146dp"
+        android:layout_height="144dp"
+        android:layout_x="231dp"
+        android:layout_y="457dp"
+        app:srcCompat="@drawable/chiken" />
+
+    <ImageView
+        android:id="@+id/img_btn_select1"
+        android:layout_width="146dp"
+        android:layout_height="144dp"
+        android:layout_x="29dp"
+        android:layout_y="93dp"
+        app:srcCompat="@drawable/meal" />
+
+    <ImageView
+        android:id="@+id/img_btn_select3"
+        android:layout_width="146dp"
+        android:layout_height="144dp"
+        android:layout_x="129dp"
+        android:layout_y="284dp"
+        app:srcCompat="@drawable/chiken" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="93dp"
+        android:layout_y="33dp"
+        android:text="Make Your Selection"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60px" />
+</AbsoluteLayout>

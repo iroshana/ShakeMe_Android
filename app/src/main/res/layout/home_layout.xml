@@ -11,7 +11,7 @@
         android:layout_y="62dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/img_btnShake"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="11dp"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/btnshake2" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/img_btnInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="285dp"
@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/btninfo" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/img_btnLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="148dp"
