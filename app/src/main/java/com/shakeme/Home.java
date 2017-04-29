@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class Home extends AppCompatActivity implements View.OnClickListener {
 
-    private ImageView img_btnShake,img_btnInfo, img_btnLocation;
+    private ImageView img_btnShake,img_btnInfo, img_btnLocation,img_shakego;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,8 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
         img_btnInfo.setOnClickListener(this);
         img_btnLocation = (ImageView) findViewById(R.id.img_btnLocation);
         img_btnLocation.setOnClickListener(this);
+        img_shakego  = (ImageView) findViewById(R.id.img_shake);
+        img_shakego.setOnClickListener(this);
     }
 
 
@@ -35,8 +37,10 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
 
         if(v == img_btnShake){
             fragment = new FragmentShake();
-        }else {
+        }else if(v == img_btnLocation){
             fragment = new FragmentLocation();
+        }else{
+            fragment = new FragmentInfo();
         }
 
         ReplaceFragment(fragment);
