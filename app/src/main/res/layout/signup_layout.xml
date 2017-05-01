@@ -5,56 +5,56 @@
 
     <ImageView
         android:id="@+id/img_label_createAccount"
-        android:layout_width="389dp"
-        android:layout_height="86dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="15dp"
         android:layout_y="80dp"
         app:srcCompat="@drawable/lblcreateaccount" />
 
     <ImageView
         android:id="@+id/img_FullName"
-        android:layout_width="389dp"
-        android:layout_height="86dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="15dp"
         android:layout_y="177dp"
         app:srcCompat="@drawable/fullname" />
 
     <ImageView
         android:id="@+id/img_Username"
-        android:layout_width="389dp"
-        android:layout_height="86dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="15dp"
         android:layout_y="268dp"
         app:srcCompat="@drawable/username" />
 
     <ImageView
         android:id="@+id/img_Email"
-        android:layout_width="389dp"
-        android:layout_height="86dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="15dp"
         android:layout_y="358dp"
         app:srcCompat="@drawable/email" />
 
     <ImageView
         android:id="@+id/img_Password"
-        android:layout_width="389dp"
-        android:layout_height="86dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="15dp"
         android:layout_y="450dp"
         app:srcCompat="@drawable/password" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="389dp"
-        android:layout_height="86dp"
+        android:id="@+id/btn_SignUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="15dp"
         android:layout_y="563dp"
         app:srcCompat="@drawable/btnsignup" />
 
     <EditText
         android:id="@+id/txt_FullName"
-        android:layout_width="304dp"
-        android:layout_height="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="91dp"
         android:layout_y="200dp"
         android:ems="10"
@@ -63,9 +63,9 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/txt_UserName"
-        android:layout_width="304dp"
-        android:layout_height="55dp"
+        android:id="@+id/txt_UserNamesignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="91dp"
         android:layout_y="289dp"
         android:ems="10"
@@ -75,8 +75,8 @@
 
     <EditText
         android:id="@+id/txt_Email"
-        android:layout_width="304dp"
-        android:layout_height="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="91dp"
         android:layout_y="380dp"
         android:ems="10"
@@ -86,8 +86,8 @@
 
     <EditText
         android:id="@+id/txt_Password"
-        android:layout_width="304dp"
-        android:layout_height="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_x="91dp"
         android:layout_y="472dp"
         android:ems="10"

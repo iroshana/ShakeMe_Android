@@ -9,8 +9,8 @@
     tools:context="com.shakeme.Login">
 
     <include layout="@layout/login_layout"
-        tools:layout_editor_absoluteY="48dp"
-        tools:layout_editor_absoluteX="-94dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints" />
 
 

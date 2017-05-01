@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "368715148981",
+    "firebase_url": "https://shakeme-acee6.firebaseio.com",
+    "project_id": "shakeme-acee6",
+    "storage_bucket": "shakeme-acee6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368715148981:android:015f2b23ce92389c",
+        "android_client_info": {
+          "package_name": "com.shakeme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368715148981-tl8p9kb1tt49e1ikcthuao71vts9k20t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shakeme",
+            "certificate_hash": "60b6e59dbb6322515b5567fe9c11d6945edc1d91"
+          }
+        },
+        {
+          "client_id": "368715148981-drukr8ujei1th7oq1u0edpnp23n84cd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq0bwoRTrAhWylnEgzFXdMHOwiJdfRycs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368715148981-drukr8ujei1th7oq1u0edpnp23n84cd1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

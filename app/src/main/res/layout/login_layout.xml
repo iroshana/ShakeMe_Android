@@ -5,50 +5,64 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/img_LoginBtn"
-        android:layout_width="387dp"
-        android:layout_height="72dp"
-        android:layout_x="15dp"
-        android:layout_y="492dp"
-        app:srcCompat="@drawable/btnlogin" />
-
-    <ImageView
         android:id="@+id/imageUsename"
-        android:layout_width="389dp"
-        android:layout_height="86dp"
-        android:layout_x="15dp"
-        android:layout_y="277dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="216dp"
         app:srcCompat="@drawable/username" />
-
-    <EditText
-        android:id="@+id/txt_Username"
-        android:layout_width="304dp"
-        android:layout_height="55dp"
-        android:layout_x="93dp"
-        android:layout_y="296dp"
-        android:ems="10"
-        android:hint="@string/username"
-        android:textColorHint="@android:color/white"
-        android:inputType="textPersonName" />
 
     <ImageView
         android:id="@+id/imagePassword"
-        android:layout_width="389dp"
-        android:layout_height="86dp"
-        android:layout_x="15dp"
-        android:layout_y="385dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="319dp"
         android:contentDescription="imageForPasswordField"
         app:srcCompat="@drawable/password" />
 
+    <ImageView
+        android:id="@+id/img_LoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="472dp"
+        app:srcCompat="@drawable/btnlogin" />
+
+
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="179dp"
+        android:layout_y="595dp"
+        android:text="Sign UP"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
     <EditText
-        android:id="@+id/txt_Password"
-        android:layout_width="304dp"
-        android:layout_height="55dp"
-        android:layout_x="93dp"
-        android:layout_y="405dp"
+        android:id="@+id/txt_Username_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="92dp"
+        android:layout_y="244dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/txt_Password_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="95dp"
+        android:layout_y="349dp"
         android:ems="10"
         android:hint="@string/password"
-        android:textColorHint="@android:color/white"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white" />
 
 </AbsoluteLayout>

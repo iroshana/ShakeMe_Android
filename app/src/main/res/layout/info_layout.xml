@@ -7,7 +7,17 @@
         android:id="@+id/imginfo"
         android:layout_width="367dp"
         android:layout_height="589dp"
-        android:layout_x="28dp"
-        android:layout_y="51dp"
+        android:layout_x="24dp"
+        android:layout_y="64dp"
         app:srcCompat="@drawable/offer" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="171dp"
+        android:layout_y="3dp"
+        android:text="About"
+        android:textColor="@color/colorwhite"
+        android:textSize="80px" />
 </AbsoluteLayout>
