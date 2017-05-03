@@ -94,8 +94,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 }
             });
         }
-
-
     }
 
     private void CheckUserExsist() {
