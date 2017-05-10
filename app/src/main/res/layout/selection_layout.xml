@@ -3,46 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/img_btn_select2"
-        android:layout_width="146dp"
-        android:layout_height="144dp"
-        android:layout_x="225dp"
-        android:layout_y="94dp"
-        app:srcCompat="@drawable/chiken" />
-
-    <ImageView
-        android:id="@+id/img_btn_select4"
-        android:layout_width="146dp"
-        android:layout_height="144dp"
-        android:layout_x="38dp"
-        android:layout_y="461dp"
-        app:srcCompat="@drawable/meal" />
-
-    <ImageView
-        android:id="@+id/img_btn_select5"
-        android:layout_width="146dp"
-        android:layout_height="144dp"
-        android:layout_x="231dp"
-        android:layout_y="457dp"
-        app:srcCompat="@drawable/chiken" />
-
-    <ImageView
-        android:id="@+id/img_btn_select1"
-        android:layout_width="146dp"
-        android:layout_height="144dp"
-        android:layout_x="29dp"
-        android:layout_y="93dp"
-        app:srcCompat="@drawable/meal" />
-
-    <ImageView
-        android:id="@+id/img_btn_select3"
-        android:layout_width="146dp"
-        android:layout_height="144dp"
-        android:layout_x="129dp"
-        android:layout_y="284dp"
-        app:srcCompat="@drawable/chiken" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -52,4 +12,89 @@
         android:text="Make Your Selection"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="60px" />
+
+    <ImageView
+        android:id="@+id/img_btn_drinks"
+        android:layout_width="96dp"
+        android:layout_height="92dp"
+        android:layout_x="254dp"
+        android:layout_y="80dp"
+        app:srcCompat="@drawable/drinks" />
+
+    <ImageView
+        android:id="@+id/img_btn_meal"
+        android:layout_width="96dp"
+        android:layout_height="92dp"
+        android:layout_x="24dp"
+        android:layout_y="88dp"
+        app:srcCompat="@drawable/meal" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="284dp"
+        android:layout_y="183dp"
+        android:text="Drinks"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="58dp"
+        android:layout_y="189dp"
+        android:text="Meal"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/img_btn_pizza"
+        android:layout_width="94dp"
+        android:layout_height="92dp"
+        android:layout_x="260dp"
+        android:layout_y="224dp"
+        app:srcCompat="@drawable/pizza" />
+
+    <ImageView
+        android:id="@+id/img_btn_burgers"
+        android:layout_width="94dp"
+        android:layout_height="78dp"
+        android:layout_x="30dp"
+        android:layout_y="228dp"
+        app:srcCompat="@drawable/burgers" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="54dp"
+        android:layout_y="320dp"
+        android:text="Burgers"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="291dp"
+        android:layout_y="324dp"
+        android:text="Pizza"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/img_btn_chiken"
+        android:layout_width="102dp"
+        android:layout_height="90dp"
+        android:layout_x="139dp"
+        android:layout_y="317dp"
+        app:srcCompat="@drawable/chiken" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="169dp"
+        android:layout_y="413dp"
+        android:text="Chicken"
+        android:textColor="@color/colorPrimaryDark" />
 </AbsoluteLayout>

@@ -4,6 +4,8 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -14,10 +16,18 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Home extends AppCompatActivity implements View.OnClickListener {
 
-    private ImageView img_btnShake,img_btnInfo, img_btnLocation,imgshake,img_logout;
+    private ImageView img_btnShake,img_btnInfo, img_btnLocation,imgshakeLogo,img_logout;
+
+    //---------------selection Layout------------------------//
+    private ImageView burger,pizza,chicken,drinks,meal;
+    //-----------------------------------------------//
 
     private FirebaseAuth auth;
     private FirebaseAuth.AuthStateListener authListner;
+
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+    private ShakeDetector mShakeDetector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,10 +56,26 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
         img_btnLocation.setOnClickListener(this);
         img_logout = (ImageView) findViewById(R.id.btn_Logout);
 
+        imgshakeLogo = (ImageView) findViewById(R.id.img_shake_btnLogo);
+
+        drinks = (ImageView) findViewById(R.id.img_btn_drinks);
+        pizza = (ImageView) findViewById(R.id.img_btn_pizza);
+        burger = (ImageView) findViewById(R.id.img_btn_burgers);
+        chicken = (ImageView) findViewById(R.id.img_btn_chiken);
+        meal = (ImageView) findViewById(R.id.img_btn_meal);
+
+
         img_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Logout();
+            }
+        });
+
+        imgshakeLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Shake();
             }
         });
     }
@@ -82,6 +108,18 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
 
     }
 
+    private void Shake() {
+        mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mShakeDetector = new ShakeDetector(new ShakeDetector.OnShakeListener() {
+            @Override
+            public void onShake() {
+                Fragment fragment = new Fragment_Selection();
+                ReplaceFragment(fragment);
+            }
+        });
+
+    }
 
 
     public void ReplaceFragment(Fragment fragment){
