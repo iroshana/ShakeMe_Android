@@ -1,6 +1,9 @@
 package com.shakeme;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -85,12 +88,15 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             auth.signInWithEmailAndPassword(emailField, passwordField).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                    if(task.isSuccessful()){
-                        CheckUserExsist();
-
-                    }else {
-                        Toast.makeText(Login.this,"Error Login", Toast.LENGTH_LONG).show();
+                    if (isNetworkAvailable()) {
+                        if (task.isSuccessful()) {
+                            CheckUserExsist();
+                    } else {
+                        Toast.makeText(Login.this, "Error Login", Toast.LENGTH_LONG).show();
                     }
+                } else {
+                    Toast.makeText(Login.this, "Check your Internet connection", Toast.LENGTH_LONG).show();
+                }
                 }
             });
         }
@@ -117,5 +123,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
             }
         });
+    }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }
