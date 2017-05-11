@@ -18,10 +18,6 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
 
     private ImageView img_btnShake,img_btnInfo, img_btnLocation,imgshakeLogo,img_logout;
 
-    //---------------selection Layout------------------------//
-    private ImageView burger,pizza,chicken,drinks,meal;
-    //-----------------------------------------------//
-
     private FirebaseAuth auth;
     private FirebaseAuth.AuthStateListener authListner;
 
@@ -55,12 +51,6 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
         img_btnLocation = (ImageView) findViewById(R.id.img_btnLocation);
         img_btnLocation.setOnClickListener(this);
         img_logout = (ImageView) findViewById(R.id.btn_Logout);
-
-        drinks = (ImageView) findViewById(R.id.img_btn_drinks);
-        pizza = (ImageView) findViewById(R.id.img_btn_pizza);
-        burger = (ImageView) findViewById(R.id.img_btn_burgers);
-        chicken = (ImageView) findViewById(R.id.img_btn_chiken);
-        meal = (ImageView) findViewById(R.id.img_btn_meal);
 
         img_logout.setOnClickListener(new View.OnClickListener() {
             @Override
