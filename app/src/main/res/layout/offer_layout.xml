@@ -3,22 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txt_OfferCode"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_x="5dp"
-        android:layout_y="95dp"
-        android:textAlignment="center"
-        android:textSize="50dp"
-        android:text="-----------" />
-
     <Button
         android:id="@+id/btn_Accept"
         android:layout_width="248dp"
         android:layout_height="wrap_content"
-        android:layout_x="102dp"
-        android:layout_y="346dp"
-        android:text="Accept" />
+        android:layout_x="82dp"
+        android:layout_y="492dp"
+        android:text="Redeem" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="74dp"
+        android:textAlignment="center"
+        android:text="Offer"
+        android:textColor="@color/colorwhite"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/txt_OfferCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="167dp"
+        android:text="CocaCola"
+        android:textAlignment="center"
+        android:textColor="@color/colorwhite"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/offerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="250dp"
+        android:text="COCAAB98F"
+        android:textAlignment="center"
+        android:textColor="@color/colorwhite"
+        android:textSize="50dp" />
 
 </AbsoluteLayout>

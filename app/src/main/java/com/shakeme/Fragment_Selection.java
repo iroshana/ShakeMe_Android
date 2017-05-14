@@ -8,7 +8,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.Model.Category;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,6 +34,11 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
     private DatabaseReference ref;
     private FirebaseAuth auth;
     private List<Category> lstCategory = new ArrayList<>();
+
+    private TextView offer;
+    private Button redeem;
+
+    private TextView txt8,txt6,txt11,txt9,txt10;
 
     //private Category categoryVM;
     //private Fragment fragment;
@@ -57,6 +64,25 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
         //chicken.setOnClickListener(this);
         meal = (ImageView) view.findViewById(R.id.img_btn_meal);
         //meal.setOnClickListener(this);
+        offer = (TextView) view.findViewById(R.id.txt_Offer);
+        redeem = (Button) view.findViewById(R.id.btn_Redeeem);
+
+
+        txt6 = (TextView) view.findViewById(R.id.textView6);
+        txt8 = (TextView) view.findViewById(R.id.textView8);
+        txt9 = (TextView) view.findViewById(R.id.textView9);
+        txt10 = (TextView) view.findViewById(R.id.textView10);
+        txt11 = (TextView) view.findViewById(R.id.textView11);
+
+        redeem.setVisibility(View.INVISIBLE);
+
+        redeem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),Home.class));
+
+            }
+        });
 
         meal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +100,6 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
 
                         Category categoryVM = lstCategory.get(new Random().nextInt(lstCategory.size()));
                         Log.d("------ "+categoryVM.getName(), categoryVM.getKey());
-                        //Fragment fragment = new FragmentOffer();
 
                         ref = FirebaseDatabase.getInstance().getReference().child("Users");
                         String user_ID = auth.getCurrentUser().getUid();
@@ -83,7 +108,12 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
                         current_userdb.child("OfferKey").setValue(categoryVM.getKey());
                         current_userdb.child("OfferName").setValue(categoryVM.getName());
 
-                        ReplaceFragment();
+                        offer.setText(categoryVM.getName() + " - " + categoryVM.getKey());
+                        redeem.setVisibility(View.VISIBLE);
+
+                        Hide();
+                        setRetainInstance(false);
+                        //startActivity(new Intent(getActivity(),Offer.class));
                     }
 
                     @Override
@@ -110,7 +140,6 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
 
                         Category categoryVM = lstCategory.get(new Random().nextInt(lstCategory.size()));
                         Log.d("------ "+categoryVM.getName(), categoryVM.getKey());
-                        //Fragment fragment = new FragmentOffer();
 
                         ref = FirebaseDatabase.getInstance().getReference().child("Users");
                         String user_ID = auth.getCurrentUser().getUid();
@@ -119,7 +148,11 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
                         current_userdb.child("OfferKey").setValue(categoryVM.getKey());
                         current_userdb.child("OfferName").setValue(categoryVM.getName());
 
-                        ReplaceFragment();
+                        offer.setText(categoryVM.getName() + " - " + categoryVM.getKey());
+                        redeem.setVisibility(View.VISIBLE);
+
+                        Hide();
+                        //startActivity(new Intent(getActivity(),Offer.class));
                     }
 
                     @Override
@@ -146,7 +179,6 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
 
                         Category categoryVM = lstCategory.get(new Random().nextInt(lstCategory.size()));
                         Log.d("------ "+categoryVM.getName(), categoryVM.getKey());
-                        //Fragment fragment = new FragmentOffer();
 
                         ref = FirebaseDatabase.getInstance().getReference().child("Users");
                         String user_ID = auth.getCurrentUser().getUid();
@@ -155,7 +187,11 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
                         current_userdb.child("OfferKey").setValue(categoryVM.getKey());
                         current_userdb.child("OfferName").setValue(categoryVM.getName());
 
-                        ReplaceFragment();
+                        offer.setText(categoryVM.getName() + " - " + categoryVM.getKey());
+                        redeem.setVisibility(View.VISIBLE);
+
+                        Hide();
+                        //startActivity(new Intent(getActivity(),Offer.class));
                     }
 
                     @Override
@@ -182,7 +218,6 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
 
                         Category categoryVM = lstCategory.get(new Random().nextInt(lstCategory.size()));
                         Log.d("------ "+categoryVM.getName(), categoryVM.getKey());
-                        //Fragment fragment = new FragmentOffer();
 
                         ref = FirebaseDatabase.getInstance().getReference().child("Users");
                         String user_ID = auth.getCurrentUser().getUid();
@@ -191,7 +226,12 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
                         current_userdb.child("OfferKey").setValue(categoryVM.getKey());
                         current_userdb.child("OfferName").setValue(categoryVM.getName());
 
-                        ReplaceFragment();
+                        offer.setText(categoryVM.getName() + " - " + categoryVM.getKey());
+                        redeem.setVisibility(View.VISIBLE);
+
+                        Hide();
+                        //startActivity(new Intent(getActivity(),Offer.class));
+
                     }
 
                     @Override
@@ -218,7 +258,6 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
 
                         Category categoryVM = lstCategory.get(new Random().nextInt(lstCategory.size()));
                         Log.d("------ "+categoryVM.getName(), categoryVM.getKey());
-                        //Fragment fragment = new FragmentOffer();
 
                         ref = FirebaseDatabase.getInstance().getReference().child("Users");
                         String user_ID = auth.getCurrentUser().getUid();
@@ -227,7 +266,10 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
                         current_userdb.child("OfferKey").setValue(categoryVM.getKey());
                         current_userdb.child("OfferName").setValue(categoryVM.getName());
 
-                        ReplaceFragment();
+                        offer.setText(categoryVM.getName() + " - " + categoryVM.getKey());
+                        redeem.setVisibility(View.VISIBLE);
+                        Hide();
+                        //startActivity(new Intent(getActivity(),Offer.class));
                     }
 
                     @Override
@@ -246,18 +288,18 @@ public class Fragment_Selection extends Fragment implements View.OnClickListener
 
     }
 
+    private void Hide(){
+        meal.setVisibility(View.GONE);
+        drinks.setVisibility(View.GONE);
+        pizza.setVisibility(View.GONE);
+        burger.setVisibility(View.GONE);
+        chicken.setVisibility(View.GONE);
 
-    public void ReplaceFragment(){
-        /*final FragmentManager manager = getFragmentManager();
-        final FragmentTransaction transaction = manager.beginTransaction();
-        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-        transaction.replace(R.id.framelayout_container, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();*/
-
-        Intent mainIntent = new Intent(getActivity(),Offer.class);
-        mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivityForResult(mainIntent, 0);
-        //startActivity(mainIntent);
+        txt6.setVisibility(View.GONE);
+        txt8.setVisibility(View.GONE);
+        txt9.setVisibility(View.GONE);
+        txt10.setVisibility(View.GONE);
+        txt11.setVisibility(View.GONE);
     }
+
 }
