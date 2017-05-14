@@ -30,6 +30,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        System.out.println("Home");
         auth = FirebaseAuth.getInstance();
         authListner = new FirebaseAuth.AuthStateListener() {
             @Override

@@ -52,7 +52,8 @@
         android:ems="10"
         android:hint="@string/Email"
         android:inputType="textPersonName"
-        android:textColorHint="@android:color/white" />
+        android:textColorHint="@android:color/white"
+        android:textColor="@color/colorwhite"/>
 
     <EditText
         android:id="@+id/txt_Password_Login"
@@ -63,6 +64,8 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:textColorHint="@android:color/white" />
+        android:textColorHint="@android:color/white"
+        android:textColor="@color/colorwhite"
+        />
 
 </AbsoluteLayout>

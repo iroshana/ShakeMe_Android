@@ -88,15 +88,16 @@ public class SignUp extends AppCompatActivity {
         }
 
         if(isTrue){
-
+            progress = new ProgressDialog(this);
             progress.setMessage("Signing Up........");
-
+            progress.show();
             auth.createUserWithEmailAndPassword(emailfield,passwordfield).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
 
                     if(task.isSuccessful()){
+                        progress.hide();
                         String user_ID = auth.getCurrentUser().getUid();
 
                         DatabaseReference current_userdb = mref.child(user_ID);

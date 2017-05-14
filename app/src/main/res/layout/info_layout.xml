@@ -3,13 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/imginfo"
         android:layout_width="367dp"
         android:layout_height="589dp"
         android:layout_x="24dp"
         android:layout_y="64dp"
-        app:srcCompat="@drawable/offer" />
+        app:srcCompat="@drawable/offer" />-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_y="64dp"
+        android:layout_x="5dp"
+        android:text="Introduction\n
+Shake Me is application that helps to make your eating habbit more easier by giving you various offers in PIZZA HUT by your choice.
+\n
+\n
+How To Use\n
+Shaking your mobile you can get a chance to collect offer by your choice. By giving offer code to any PIZZA HUT you can redeem your offer within 12 houres
+\n\n
+	       Developed By Code Chefs"
+        android:textColor="@color/colorwhite"
+        android:textSize="60px" />
 
     <TextView
         android:id="@+id/textView"

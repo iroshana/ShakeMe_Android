@@ -1,5 +1,6 @@
 package com.shakeme;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -29,7 +30,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     private ImageView imgLoginBtn;
     private TextView signUp;
     private EditText email,password;
-
+    ProgressDialog pd;
     private FirebaseAuth auth;
     private DatabaseReference dbReference;
 
@@ -69,6 +70,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void CheckLogin() {
+        pd = new ProgressDialog(this);
+        pd.setMessage("Loading...");
+        pd.show();
         String emailField = email.getText().toString().trim();
         String passwordField = password.getText().toString().trim();
 
@@ -90,8 +94,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (isNetworkAvailable()) {
                         if (task.isSuccessful()) {
+                            pd.hide();
                             CheckUserExsist();
                     } else {
+                            pd.hide();
                         Toast.makeText(Login.this, "Error Login", Toast.LENGTH_LONG).show();
                     }
                 } else {
@@ -103,6 +109,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void CheckUserExsist() {
+
         final String user_ID = auth.getCurrentUser().getUid();
 
         dbReference.addValueEventListener(new ValueEventListener() {
